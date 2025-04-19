@@ -1,0 +1,22 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "description": "Survey application with data visualization",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "cd backend/frontend && ng serve",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
